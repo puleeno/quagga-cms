@@ -5,7 +5,7 @@ function MyButton() {
       </button>
     );
   }
-  
+
   export default function MyApp() {
     return (
       <div>
@@ -14,4 +14,6 @@ function MyButton() {
       </div>
     );
   }
-  
+
+
+document.querySelector('body').innerHTML = 'Hello world';

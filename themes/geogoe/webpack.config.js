@@ -13,7 +13,7 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 
 const config = {
     entry: {
-        'geogoe-react': './resources/src/index.jsx'
+        'geogoe': './resources/src/index.jsx'
     },
     output: {
         path: path.resolve(__dirname, 'assets'),
