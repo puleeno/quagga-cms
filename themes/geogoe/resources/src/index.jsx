@@ -1,10 +1,6 @@
-import { render } from 'preact';
+import React from "react";
+import ReactDOM from "react-dom";
 import App from "./App";
+import "./scss/app.scss";
 
-import './scss/app.scss';
-
-render(
-  <App />,
-  document.body,
-  document.querySelector('#app')
-);
+ReactDOM.render(<App />, document.getElementById("app"));
