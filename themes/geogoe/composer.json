@@ -1,0 +1,19 @@
+{
+    "name": "puleeno/geogoe",
+    "description": "geogoe.com theme",
+    "autoload": {
+        "psr-4": {
+            "Puleeno\\Geogoe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Puleeno Nguyen",
+            "email": "puleeno@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "vendor-dir": "lib"
+    }
+}

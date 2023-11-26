@@ -3,6 +3,7 @@
 use App\Common\Constants;
 use App\Common\Option;
 use App\Core\Application;
+use App\Core\Env;
 use App\Core\Helper;
 use App\Core\HookManager;
 use Psr\Container\ContainerInterface;
@@ -64,5 +65,43 @@ if (!function_exists('get_container')) {
     function get_container(): ContainerInterface
     {
         return Helper::getContainer();
+    }
+}
+
+if (!function_exists('get_active_theme')) {
+    function get_active_theme()
+    {
+        $activedTheme = Env::get('ACTIVATE_THEME');
+
+        return empty($activedTheme)
+            ? $activedTheme
+            : Env::get('activate_theme');
+    }
+}
+
+if (!function_exists('get_active_theme_directory')) {
+    function get_active_theme_directory()
+    {
+        return implode(
+            DIRECTORY_SEPARATOR,
+            [
+                get_path('theme'),
+                get_active_theme(),
+            ]
+        );
+    }
+}
+
+if (!function_exists('get_active_theme_url')) {
+    function get_active_theme_url($theme = null)
+    {
+        return implode(
+            '/',
+            [
+                HookManager::applyFilters('theme_url_hostname', ''),
+                'themes',
+                is_null($theme) ? get_active_theme() : $theme,
+            ]
+        );
     }
 }
