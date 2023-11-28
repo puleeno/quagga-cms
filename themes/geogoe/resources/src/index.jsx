@@ -1,6 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { render } from 'preact';
 import App from "./App";
+
 import "./scss/app.scss";
 
-ReactDOM.render(<App />, document.getElementById("app"));
+
+render(
+  <App />,
+  document.body,
+  document.querySelector('#app')
+);
