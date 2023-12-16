@@ -33,7 +33,16 @@
     "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
+    "@types/react": "18.0.0",
+    "@blueprintjs/core": "^5.7.1",
+    "preact": "^10.17.1",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat",
+    "react/jsx-runtime": "preact/jsx-runtime"
   }
 }

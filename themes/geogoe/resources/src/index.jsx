@@ -1,19 +1,11 @@
-function MyButton() {
-    return (
-      <button>
-        I'm a button
-      </button>
-    );
-  }
+import { render } from 'preact';
+import App from "./App";
 
-  export default function MyApp() {
-    return (
-      <div>
-        <h1>Welcome to my app</h1>
-        <MyButton />
-      </div>
-    );
-  }
+import "./scss/app.scss";
 
 
-document.querySelector('body').innerHTML = 'Hello world';
+render(
+  <App />,
+  document.body,
+  document.querySelector('#app')
+);

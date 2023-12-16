@@ -52,17 +52,13 @@ const config = {
         ],
     },
     resolve: {
-        "alias": {
+        extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
+        alias: {
             "react": "preact/compat",
             "react-dom/test-utils": "preact/test-utils",
             "react-dom": "preact/compat",     // Must be below test-utils
             "react/jsx-runtime": "preact/jsx-runtime"
         },
-        extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
-    },
-    externals: {
-        react: "react",
-        preact: "preact"
     }
 };
 
@@ -70,7 +66,9 @@ module.exports = () => {
     if (isProduction) {
         config.mode = 'production';
 
-        config.plugins.push(new MiniCssExtractPlugin());
+        config.plugins.push(new MiniCssExtractPlugin({
+            filename: "css/[name].css"
+        }));
 
 
         config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
