@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use App\Core\Settings\Settings;
-use App\Core\Settings\SettingsInterface;
+use Jackal\Jackal\Settings\Settings;
+use Jackal\Jackal\Settings\SettingsInterface;
 use DI\ContainerBuilder;
 use Monolog\Logger;
 

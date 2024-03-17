@@ -3,8 +3,8 @@
 namespace App\Traits;
 
 use App\Constracts\Assets\AssetOptionsConstract;
-use App\Core\Assets\AssetOptions;
-use App\Core\Helper;
+use Jackal\Jackal\Assets\AssetOptions;
+use Jackal\Jackal\Helper;
 
 trait AssetBaseTrait
 {

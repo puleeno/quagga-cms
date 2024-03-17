@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Core\Application;
+use Jackal\Jackal\Application;
 use App\Http\Middleware\AssetsMiddleware;
 use App\Http\Middleware\SessionMiddleware;
 

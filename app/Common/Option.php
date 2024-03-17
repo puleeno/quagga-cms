@@ -2,7 +2,7 @@
 
 namespace App\Common;
 
-use App\Core\Helper;
+use Jackal\Jackal\Helper;
 use App\Exceptions\ClassNotFoundException;
 use ReflectionClass;
 

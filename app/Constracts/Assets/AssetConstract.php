@@ -3,7 +3,7 @@
 namespace App\Constracts\Assets;
 
 use App\Constracts\AssetTypeEnum;
-use App\Core\Assets\AssetOptions;
+use Jackal\Jackal\Assets\AssetOptions;
 
 interface AssetConstract
 {
