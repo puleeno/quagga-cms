@@ -2,10 +2,10 @@
 
 use App\Common\Constants;
 use App\Common\Option;
-use App\Core\Application;
-use App\Core\Env;
-use App\Core\Helper;
-use App\Core\HookManager;
+use Jackal\Jackal\Application;
+use Jackal\Jackal\Env;
+use Jackal\Jackal\Helper;
+use Jackal\Jackal\HookManager;
 use Psr\Container\ContainerInterface;
 
 if (!function_exists('array_get')) {

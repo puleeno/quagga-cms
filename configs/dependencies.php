@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Core\Settings\SettingsInterface;
+use Jackal\Jackal\Settings\SettingsInterface;
 use DI\ContainerBuilder;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;

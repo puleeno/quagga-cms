@@ -2,7 +2,7 @@
 
 namespace App\Constracts;
 
-use App\Core\Application;
+use Jackal\Jackal\Application;
 use DI\Container;
 
 interface ExtensionConstract

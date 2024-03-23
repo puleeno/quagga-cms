@@ -3,9 +3,9 @@
 namespace App\Http\Middleware;
 
 use App\Constracts\MiddlewareConstract;
-use App\Core\AssetManager;
-use App\Core\Helper;
-use App\Core\HookManager;
+use Jackal\Jackal\AssetManager;
+use Jackal\Jackal\Helper;
+use Jackal\Jackal\HookManager;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Psr\Http\Message\ResponseInterface;

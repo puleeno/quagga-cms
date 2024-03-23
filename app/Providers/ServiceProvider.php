@@ -2,14 +2,14 @@
 
 namespace App\Providers;
 
-use App\Core\Application;
+use Jackal\Jackal\Application;
 
 abstract class ServiceProvider
 {
     /**
      * The application instance.
      *
-     * @var \App\Core\Application
+     * @var \Jackal\Jackal\Application
      */
     protected $app;
 

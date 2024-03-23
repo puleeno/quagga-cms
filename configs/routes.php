@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
-use App\Core\Application;
+use Jackal\Jackal\Application;
 use App\Application\Actions\User\ListUsersAction;
 use App\Application\Actions\User\ViewUserAction;
 use App\Http\Controllers\StaticFileController;
-use App\Core\HookManager;
+use Jackal\Jackal\HookManager;
 use App\Http\Controllers\HomeController;
 
 return function (Application $app) {

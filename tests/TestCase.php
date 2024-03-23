@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use App\Core\Application;
-use App\Core\Factory\AppFactory;
+use Jackal\Jackal\Application;
+use Jackal\Jackal\Factory\AppFactory;
 use DI\ContainerBuilder;
 use Exception;
 use PHPUnit\Framework\TestCase as PHPUnit_TestCase;
