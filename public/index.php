@@ -3,7 +3,7 @@
 declare(strict_types=1);
 define('PULEENO_CMS_START', microtime(true));
 
-use Jackal\Bootstrap;
+use Quagga\Bootstrap;
 
 require __DIR__ . '/../app/bootstrap.php';
 $bootstrap = Bootstrap::getInstance();

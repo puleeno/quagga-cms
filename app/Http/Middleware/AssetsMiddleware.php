@@ -3,9 +3,9 @@
 namespace App\Http\Middleware;
 
 use App\Constracts\MiddlewareConstract;
-use Jackal\Jackal\AssetManager;
-use Jackal\Jackal\Helper;
-use Jackal\Jackal\HookManager;
+use Quagga\Quagga\AssetManager;
+use Quagga\Quagga\Helper;
+use Quagga\Quagga\HookManager;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -22,7 +22,7 @@ class AssetsMiddleware implements MiddlewareConstract
     {
         return HookManager::applyFilters(
             'title',
-            get_option('site_name', 'Jackal CMS')
+            get_option('site_name', 'Quagga CMS')
         );
     }
 

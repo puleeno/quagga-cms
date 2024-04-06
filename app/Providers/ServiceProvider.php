@@ -2,14 +2,14 @@
 
 namespace App\Providers;
 
-use Jackal\Jackal\Application;
+use Quagga\Quagga\Application;
 
 abstract class ServiceProvider
 {
     /**
      * The application instance.
      *
-     * @var \Jackal\Jackal\Application
+     * @var \Quagga\Quagga\Application
      */
     protected $app;
 

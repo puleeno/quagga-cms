@@ -2,7 +2,7 @@
 
 namespace App\Constracts;
 
-use Jackal\Jackal\Application;
+use Quagga\Quagga\Application;
 use DI\Container;
 
 interface ExtensionConstract

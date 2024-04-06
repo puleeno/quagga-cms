@@ -1,19 +1,19 @@
 <?php
 
-namespace Jackal;
+namespace Quagga;
 
 use App\Common\Option;
 use App\Constracts\AssetTypeEnum;
-use Jackal\Jackal\AssetManager;
-use Jackal\Jackal\Assets\AssetStylesheetOptions;
-use Jackal\Jackal\Assets\AssetUrl;
+use Quagga\Quagga\AssetManager;
+use Quagga\Quagga\Assets\AssetStylesheetOptions;
+use Quagga\Quagga\Assets\AssetUrl;
 use App\Http\Controllers\GlobalController;
 use App\Http\Kernel;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
-use Jackal\Jackal\ExtensionManager;
-use Jackal\Jackal\Factory\AppFactory;
-use Jackal\Jackal\HookManager;
+use Quagga\Quagga\ExtensionManager;
+use Quagga\Quagga\Factory\AppFactory;
+use Quagga\Quagga\HookManager;
 use App\Http\ResponseEmitter\ResponseEmitter;
 use DI\ContainerBuilder;
 use Dotenv\Dotenv;
@@ -135,8 +135,12 @@ final class Bootstrap
         $middleware($this->app);
 
         // Register routes
-        $routes = require __DIR__ . '/../configs/routes.php';
+        $routes = require __DIR__ . '/../routes/web.php';
         $routes($this->app);
+
+        // Register routes
+        $apis = require __DIR__ . '/../apis/api.php';
+        $apis($this->app);
 
         // Register routes
         $this->app->options('/{routes:.*}', function (Request $request, Response $response) {
@@ -200,7 +204,7 @@ final class Bootstrap
         $assetManager = AssetManager::getInstance();
         $version = $this->container->get('version');
         HookManager::addAction('head', function () use ($version) {
-            echo sprintf('<meta name="generator" content="Jackal CMS %s">', $version) . PHP_EOL;
+            echo sprintf('<meta name="generator" content="Quagga CMS %s">', $version) . PHP_EOL;
         }, 0);
         HookManager::addAction('head', function () {
             $faviconUrl = HookManager::applyFilters('favicon_url', '/assets/favicon.ico');

@@ -1,5 +1,5 @@
 {
-  "name": "@jackalcms/common",
+  "name": "@quaggacms/common",
   "version": "1.0.0",
   "description": "My webpack project",
   "main": "resources/src/index.js",

@@ -16,4 +16,5 @@ return [
     'reset' => 'App\Http\Controllers\Auth\ResetPasswordController',
   ],
   'password_timeout' => 10800,
+  'login_path' => '/auth/login'
 ];

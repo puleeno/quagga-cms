@@ -1,7 +1,7 @@
 <?php
 
-namespace Jackal\Extension\Common;
-use Jackal\Jackal\Extension;
+namespace Quagga\Extension\Common;
+use Quagga\Quagga\Extension;
 
 
 class CommonExtension extends Extension

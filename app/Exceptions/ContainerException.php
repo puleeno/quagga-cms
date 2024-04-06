@@ -1,6 +1,6 @@
 <?php
 
-namespace Jackal\Exceptions;
+namespace Quagga\Exceptions;
 
 use Exception;
 

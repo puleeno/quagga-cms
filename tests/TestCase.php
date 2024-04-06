@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use Jackal\Jackal\Application;
-use Jackal\Jackal\Factory\AppFactory;
+use Quagga\Quagga\Application;
+use Quagga\Quagga\Factory\AppFactory;
 use DI\ContainerBuilder;
 use Exception;
 use PHPUnit\Framework\TestCase as PHPUnit_TestCase;
@@ -56,7 +56,7 @@ class TestCase extends PHPUnit_TestCase
         $middleware($app);
 
         // Register routes
-        $routes = require __DIR__ . '/../configs/routes.php';
+        $routes = require __DIR__ . '/../routes/web.php';
         $app->options('/{routes:.*}', function (Request $request, Response $response) {
             // CORS Pre-Flight OPTIONS Request Handler
             return $response;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Jackal\Jackal\Settings\SettingsInterface;
+use Quagga\Quagga\Settings\SettingsInterface;
 use DI\ContainerBuilder;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;

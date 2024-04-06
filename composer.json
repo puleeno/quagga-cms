@@ -1,5 +1,5 @@
 {
-    "name": "puleeno/jackal-cms",
+    "name": "puleeno/quagga",
     "cms-version": "1.0.0",
     "description": "Yet another PHP CMS by Puleeno Nguyen",
     "keywords": [
@@ -15,7 +15,7 @@
         {
             "name": "Puleeno Nguyen",
             "email": "puleeno@gmail.com",
-            "homepage": "https://jackal.com"
+            "homepage": "https://quagga.com"
         },
         {
             "name": "Josh Lockhart",
@@ -31,14 +31,15 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
-        "jackal-cms/framework": "dev-master",
         "davedevelopment/phpmig": "^1.7",
+        "quagga/framework": "dev-master",
         "laravel/serializable-closure": "^1.3",
         "marcj/topsort": "^2.0",
         "monolog/monolog": "^2.9",
         "opis/orm": "^1.0",
         "php-di/php-di": "^6.4",
         "phpseclib/phpseclib": "^3.0",
+        "polarising/bcrypt": "^1.0",
         "ramsey/uuid": "^4.2.3",
         "slim/console": "^0.1.0",
         "slim/psr7": "^1.6",

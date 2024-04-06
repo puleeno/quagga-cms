@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Jackal\Jackal\Application;
+use Quagga\Quagga\Application;
 use App\Http\Middleware\AssetsMiddleware;
 use App\Http\Middleware\SessionMiddleware;
 

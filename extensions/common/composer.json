@@ -1,14 +1,14 @@
 {
-    "name": "jackal-cms/common",
-    "description": "The common extension for Jackal CMS",
+    "name": "quagga/common",
+    "description": "The common extension for Quagga CMS",
     "autoload": {
         "psr-4": {
-            "Jackal\\Extension\\Common\\": "src/"
+            "Quagga\\Extension\\Common\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Jackal",
+            "name": "Quagga",
             "email": "puleeno@gmail.com"
         }
     ],
@@ -16,5 +16,5 @@
     "config": {
         "vendor-dir": "libs"
     },
-    "extension-class": "\\Jackal\\Extension\\Common\\CommonExtension"
+    "extension-class": "\\Quagga\\Extension\\Common\\CommonExtension"
 }

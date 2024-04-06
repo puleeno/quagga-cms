@@ -2,7 +2,7 @@
 
 namespace App\Constracts\Assets;
 
-use Jackal\Jackal\Assets\AssetUrl;
+use Quagga\Quagga\Assets\AssetUrl;
 
 interface AssetExternalConstract extends AssetConstract
 {

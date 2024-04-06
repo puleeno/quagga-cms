@@ -2,7 +2,7 @@
 
 namespace App\Common;
 
-use Jackal\Jackal\Helper;
+use Quagga\Quagga\Helper;
 use App\Exceptions\ClassNotFoundException;
 use ReflectionClass;
 

@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Jackal\Jackal\Settings\Settings;
-use Jackal\Jackal\Settings\SettingsInterface;
+use Quagga\Quagga\Settings\Settings;
+use Quagga\Quagga\Settings\SettingsInterface;
 use DI\ContainerBuilder;
 use Monolog\Logger;
 

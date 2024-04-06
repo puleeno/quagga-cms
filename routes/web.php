@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
-use Jackal\Jackal\Application;
+use Quagga\Quagga\Application;
 use App\Application\Actions\User\ListUsersAction;
 use App\Application\Actions\User\ViewUserAction;
 use App\Http\Controllers\StaticFileController;
-use Jackal\Jackal\HookManager;
+use Quagga\Quagga\HookManager;
 use App\Http\Controllers\HomeController;
 
 return function (Application $app) {
@@ -17,6 +17,10 @@ return function (Application $app) {
     $app->group('/users', function (Group $group) {
         $group->get('', ListUsersAction::class);
         $group->get('/{id}', ViewUserAction::class);
+    });
+
+    $app->any(config('login_path', '/auth/login'), function(){
+        die('zo');
     });
 
 

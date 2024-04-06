@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Jackal\Jackal\HookManager;
+use Quagga\Quagga\HookManager;
 use Psr\Http\Message\ResponseInterface;
 
 class HomeController extends Controller
