@@ -19,10 +19,6 @@ return function (Application $app) {
         $group->get('/{id}', ViewUserAction::class);
     });
 
-    $app->any(config('login_path', '/auth/login'), function(){
-        die('zo');
-    });
-
 
     $app->any(
         '/',

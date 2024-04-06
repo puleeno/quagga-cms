@@ -139,10 +139,6 @@ final class Bootstrap
         $routes($this->app);
 
         // Register routes
-        $apis = require __DIR__ . '/../apis/api.php';
-        $apis($this->app);
-
-        // Register routes
         $this->app->options('/{routes:.*}', function (Request $request, Response $response) {
             // CORS Pre-Flight OPTIONS Request Handler
             return $response;
