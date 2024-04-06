@@ -7,7 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit43a36414f88abfba922682f393f07d2d
 {
     public static $prefixLengthsPsr4 = array (
-        'J' => 
+        'Q' => 
         array (
             'Quagga\\Extension\\Common\\' => 24,
         ),
