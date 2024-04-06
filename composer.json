@@ -42,7 +42,7 @@
         "ramsey/uuid": "^4.2.3",
         "slim/console": "^0.1.0",
         "slim/psr7": "^1.6",
-        "slim/slim": "^4.12",
+        "slim/slim": "^4.13",
         "slim/twig-view": "^3.3",
         "spatie/schema-org": "^3.9",
         "tebazil/db-seeder": "^1.0",
