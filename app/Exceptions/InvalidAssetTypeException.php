@@ -2,7 +2,7 @@
 
 namespace App\Exceptions;
 
-use App\Constracts\AssetTypeEnum;
+use Quagga\Quagga\Constracts\AssetTypeEnum;
 use Exception;
 
 class InvalidAssetTypeException extends Exception

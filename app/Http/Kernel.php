@@ -2,7 +2,7 @@
 
 namespace App\Http;
 
-use App\Constracts\ApplicationConstract;
+use Quagga\Quagga\Constracts\ApplicationConstract;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Slim\App;
@@ -10,7 +10,7 @@ use Slim\App;
 class Kernel
 {
     /**
-     * @var \App\Constracts\ApplicationConstract
+     * @var \Quagga\Quagga\Constracts\ApplicationConstract
      */
     private $app;
 
