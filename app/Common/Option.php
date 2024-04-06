@@ -3,7 +3,7 @@
 namespace App\Common;
 
 use Quagga\Quagga\Helper;
-use App\Exceptions\ClassNotFoundException;
+use Quagga\Quagga\Exceptions\ClassNotFoundException;
 use ReflectionClass;
 
 final class Option
