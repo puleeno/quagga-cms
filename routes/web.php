@@ -19,6 +19,11 @@ return function (Application $app) {
         $group->get('/{id}', ViewUserAction::class);
     });
 
+    var_dump(config('auth.login.path', 'test'));die;
+    $app->any(config('login.path', '/auth/login'), function(){
+        die('zo');
+    });
+
 
     $app->any(
         '/',
