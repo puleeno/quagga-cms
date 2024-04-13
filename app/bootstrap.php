@@ -3,7 +3,7 @@
 namespace Quagga;
 
 use App\Common\Option;
-use Quagga\Quagga\Constracts\AssetTypeEnum;
+use Quagga\Contracts\AssetTypeEnum;
 use Quagga\Quagga\AssetManager;
 use Quagga\Quagga\Assets\AssetStylesheetOptions;
 use Quagga\Quagga\Assets\AssetUrl;

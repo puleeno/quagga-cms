@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Quagga\Quagga\Constracts\BackendControllerConstract;
-use Quagga\Quagga\Constracts\ControllerConstract;
+use Quagga\Contracts\BackendControllerConstract;
+use Quagga\Contracts\ControllerConstract;
 use Psr\Http\Message\ResponseInterface;
 use ReflectionClass;
 
