@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use Quagga\Constracts\MiddlewareConstract;
+use Quagga\Contracts\MiddlewareConstract;
 use Quagga\Quagga\AssetManager;
 use Quagga\Quagga\Helper;
 use Quagga\Quagga\HookManager;
