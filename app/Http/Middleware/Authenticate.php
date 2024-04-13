@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use Quagga\Quagga\Constracts\AuthenticateMiddlewareConstract;
+use Quagga\Constracts\AuthenticateMiddlewareConstract;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Server\MiddlewareInterface;
