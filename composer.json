@@ -37,7 +37,6 @@
         "ramsey/uuid": "^4.2.3",
         "spatie/schema-org": "^3.9",
         "tebazil/db-seeder": "^1.0",
-        "tightenco/collect": "^8.83.27",
         "twig/twig": "^3.8",
         "vlucas/phpdotenv": "^5.6"
     },
