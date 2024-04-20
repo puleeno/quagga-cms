@@ -114,7 +114,8 @@ if (!function_exists('get_active_theme_url')) {
 }
 
 if (!function_exists('config')) {
-    function config($name, $defaultValue = null) {
+    function config($name, $defaultValue = null)
+    {
         return Helper::getConfig($name, $defaultValue);
     }
 }

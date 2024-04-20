@@ -20,7 +20,7 @@ return function (Application $app) {
         $group->get('/{id}', ViewUserAction::class);
     });
 
-    $app->any(config('auth.login.path'), [LoginController::class, 'auth']);
+    $app->any(config('auth.login.path'), [LoginController::class, 'login']);
 
     $app->any(
         '/',

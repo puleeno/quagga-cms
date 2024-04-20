@@ -2,28 +2,31 @@
 
 namespace App\Http\Controllers;
 
+use Quagga\Quagga\Foundation\Auth\AuthenticatesUsers;
 use Slim\Psr7\Request;
 
 class LoginController
 {
+    /*
+    |--------------------------------------------------------------------------
+    | Login Controller
+    |--------------------------------------------------------------------------
+    |
+    | This controller handles authenticating users for the application and
+    | redirecting them to your home screen. The controller uses a trait
+    | to conveniently provide its functionality to your applications.
+    |
+    */
+    use AuthenticatesUsers;
+
+
     /**
-     * Handle an authentication attempt.
+     * Setting redirect URL after login successful
+     *
+     * @return string
      */
-    public function authenticate(Request $request): RedirectResponse
+    public function redirectTo()
     {
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
-        ]);
-
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-
-            return redirect()->intended('dashboard');
-        }
-
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+        return '/';
     }
 }
