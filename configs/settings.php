@@ -21,6 +21,11 @@ return function (ContainerBuilder $containerBuilder) {
                     'level' => Logger::DEBUG,
                 ],
                 'admin_prefix' => '/dashboard',
+                'auth' => [
+                    'login' => [
+                        'path' => '/auth/login'
+                    ]
+                ]
             ]);
         }
     ]);

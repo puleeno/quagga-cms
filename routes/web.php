@@ -9,6 +9,7 @@ use App\Application\Actions\User\ViewUserAction;
 use App\Http\Controllers\StaticFileController;
 use Quagga\Quagga\HookManager;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 
 return function (Application $app) {
     $app->any('/extensions/{extensionName:/?.+}/assets/{pagePath:/?.+}', StaticFileController::class);
@@ -19,11 +20,7 @@ return function (Application $app) {
         $group->get('/{id}', ViewUserAction::class);
     });
 
-    var_dump(config('auth.login.path', 'test'));die;
-    $app->any(config('login.path', '/auth/login'), function(){
-        die('zo');
-    });
-
+    $app->any(config('auth.login.path'), [LoginController::class, 'auth']);
 
     $app->any(
         '/',

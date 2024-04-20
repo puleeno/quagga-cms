@@ -138,6 +138,9 @@ final class Bootstrap
         $routes = require __DIR__ . '/../routes/web.php';
         $routes($this->app);
 
+        $db = require __DIR__ . '/../configs/database.php';
+        $db($this->container);
+
         // Register routes
         $this->app->options('/{routes:.*}', function (Request $request, Response $response) {
             // CORS Pre-Flight OPTIONS Request Handler
