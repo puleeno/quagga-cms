@@ -127,8 +127,8 @@ final class Bootstrap
 
         $this->app = AppFactory::createApp();
 
-        $kernel = new Kernel($this->app);
-        $kernel->configure();
+        // $kernel = new Kernel($this->app);
+        // $kernel->configure();
 
         // Register middleware
         $middleware = $this->loadSetting('middleware');
