@@ -3,11 +3,11 @@
 declare(strict_types=1);
 define('QUAGGA_CMS_START', microtime(true));
 
-require __DIR__ . '/../app/bootstrap.php';
-$bootstrap = \Quagga\Bootstrap::getInstance();
-$bootstrap->boot();
+// require __DIR__ . '/../app/bootstrap.php';
+// $bootstrap = \Quagga\Bootstrap::getInstance();
+// $bootstrap->boot();
 
-exit();
+// exit();
 
 /*
 |--------------------------------------------------------------------------
