@@ -5,7 +5,7 @@ $app = new \Quagga\Quagga\Foundation\Application(
 );
 
 $app->singleton(
-    \Quagga\Quagga\Foundation\Http\Kernel::class,
+    \Quagga\Contracts\Http\Kernel::class,
     \App\Http\Kernel::class
 );
 
