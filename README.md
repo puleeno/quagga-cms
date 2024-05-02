@@ -1,7 +1,7 @@
 Quagga CMS
 =====
 
-Quagga CMS is a free and open-source content management system (CMS) that is built on the PHP framework Laravel. Quagga CMS is easy to use and flexible, making it a great choice for creating a wide variety of websites and digital content, such as blogs, wikis, and e-commerce websites.
+Quagga CMS is a free and open-source content management system (CMS) that is built on the PHP framework Slim. Quagga CMS is easy to use and flexible, making it a great choice for creating a wide variety of websites and digital content, such as blogs, wikis, and e-commerce websites.
 
 # Features
 
